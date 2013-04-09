@@ -46,17 +46,13 @@ class Image ():
 
         try: # Look for and check out 'ArcInfo' License.
             import arcinfo                      #@UnresolvedImport @UnusedImport
-            print "ArcInfo license available"
         except:
-            print "ArcInfo license not available"
             sys.exit()                                      #@UndefinedVariable
 
         # Look for and check out 'Spatial' extension.
         if arcpy.CheckExtension("spatial") == "Available":
             arcpy.CheckOutExtension("spatial")
-            print "Spatial Analyst license available"
         else:
-            print "Spatial Analyst license not available"
             sys.exit()                                      #@UndefinedVariable
 
         # Get / Set the images and populate variables.

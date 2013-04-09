@@ -1,0 +1,41 @@
+#			Variables for Landsat Processing
+# NOTES:
+#	- Default values should never be changed in this document.
+#	- Notes should be preceded with a # symbol.
+# 	- Variables should be formated as [VARIABLE = Value].
+#	- Variables that are a Default value should be formated as
+#		[VARIABLE (Default) = Value]. Values listed as default are
+#		used by the restore_defaults method to reset all values.
+#
+# VARIABLES:
+#	Input Folder
+INPUT_FOLDER = STRING = A:\Desktop\Landsat\SubsetsMultiple
+INPUT_FOLDER (Default) = STRING = Required
+#
+#	Output Folder for results
+OUTPUT_FOLDER = STRING = A:\Desktop\Landsat\Workspace
+OUTPUT_FOLDER (Default) = STRING = Required
+#
+#	Iterations to run on the image
+ITERATIONS = INTEGER = 15
+ITERATIONS (Default) = INTEGER = 15
+#
+#	Number of tiles to divide the image
+TILES = INTEGER = 25
+TILES (Default) = INTEGER = 250
+#
+#	Number of processors
+PROCESSORS = INTEGER = 5
+PROCESSORS (Default) = INTEGER = 5
+#
+#	Noise introduced to the lines
+NOISE = INTEGER = 1
+NOISE (Default) = INTEGER = 1
+#
+#	Noise introduced to the lines (High)
+NOISEH = INTEGER = 3
+NOISEH (Default) = INTEGER = 3
+#
+#	Noise introduced to the lines (Low)
+NOISEL = INTEGER = -1
+NOISEL (Default) = INTEGER = -1
