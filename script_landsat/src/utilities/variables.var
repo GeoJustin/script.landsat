@@ -9,11 +9,14 @@
 #
 # VARIABLES:
 #	Input Folder
-INPUT_FOLDER = STRING = A:\Desktop\Landsat\SubsetsMultiple
+INPUT_FOLDER = STRING = A:\Desktop\Gilkey_Datasets\Landsat
 INPUT_FOLDER (Default) = STRING = Required
+#	Input TYPE
+INPUT_TYPE = STRING = *.IMG
+INPUT_TYPE (Default) = STRING = Required
 #
 #	Output Folder for results
-OUTPUT_FOLDER = STRING = A:\Desktop\Landsat\Workspace
+OUTPUT_FOLDER = STRING = A:\Desktop\Gilkey_Datasets\Landsat\Workspace
 OUTPUT_FOLDER (Default) = STRING = Required
 #
 #	Iterations to run on the image
@@ -21,11 +24,11 @@ ITERATIONS = INTEGER = 15
 ITERATIONS (Default) = INTEGER = 15
 #
 #	Number of tiles to divide the image
-TILES = INTEGER = 25
+TILES = INTEGER = 10
 TILES (Default) = INTEGER = 250
 #
 #	Number of processors
-PROCESSORS = INTEGER = 5
+PROCESSORS = INTEGER = 4
 PROCESSORS (Default) = INTEGER = 5
 #
 #	Noise introduced to the lines

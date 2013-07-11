@@ -40,6 +40,7 @@ class Controller ():
         
         # Get input variables and assign them to a variable        
         input_folder = variables.read_variable('INPUT_FOLDER')
+        input_type = variables.read_variable('INPUT_TYPE')
         output_Folder = variables.read_variable('OUTPUT_FOLDER')
         iterations = variables.read_variable('ITERATIONS')
         tiles = variables.read_variable('TILES')
@@ -84,7 +85,7 @@ class Controller ():
         __Log.print_break(1)
         
         #Get a list of files to process and then run 'Destriping' for each.
-        for __file in glob.glob (os.path.join (input_folder, '*.TIF')):
+        for __file in glob.glob (os.path.join (input_folder, input_type)):
             
             imageName = os.path.basename(__file) # Get current image name
             __Log.print_line("Starting Image: " + imageName)
